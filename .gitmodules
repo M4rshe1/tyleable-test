@@ -1,4 +1,0 @@
-[submodule "package"]
-	path = package
-	url = git@github.com:M4rshe1/tyleable-test.git
-	branch = package
