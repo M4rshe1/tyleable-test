@@ -1,7 +1,8 @@
 #import "vars.typ"
 #import "lib.typ"
+
 #let init = (
-  sql: vars.engines,
+  sql: (:),
   fields: (),
   params: (),
   layout: (:),
@@ -38,6 +39,7 @@
     layout: layout,
     fields: fields,
     params: params,
+    databases: sql.keys(),
   ))<meta>
 
   #if vars.sys.meta in sys.inputs {
